@@ -1,0 +1,1 @@
+<a href="{{ route('auth.google') }}">asdasd</a>
