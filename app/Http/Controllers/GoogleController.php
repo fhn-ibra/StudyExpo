@@ -22,7 +22,7 @@ class GoogleController extends Controller
 
             if($finduser){
                 Auth::login($finduser);
-                return redirect()->route('');
+                return redirect()->route('guest');
             } else {
                 $newuser = User::updateOrCreate(['email' => $user->email], [
                     'name' => $user->name,
@@ -30,7 +30,7 @@ class GoogleController extends Controller
                     'password' => rand(10000, 100000000)
                 ]);
                 Auth::login($newuser);
-                return redirect()->route('a');
+                return redirect()->route('guest');
             }
         } catch (Exception $e) {
             dd($e->getMessage());

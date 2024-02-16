@@ -15,8 +15,16 @@ use App\Http\Controllers\GoogleController;
 */
 
 Route::get('/', function () {
+    return view('guest');
+})->name('guest');
+
+Route::get('/google', function () {
     return view('tes');
 });
 
 Route::get('auth/google', [GoogleController::class, 'redirectGoogle'])->name('auth.google');
 Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
+
+Route::get('/tabel', function () {
+    return view('table');
+});
