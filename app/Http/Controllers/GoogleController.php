@@ -27,7 +27,7 @@ class GoogleController extends Controller
                 $newuser = User::updateOrCreate(['email' => $user->email], [
                     'name' => $user->name,
                     'google_id' => $user->id,
-                    'password' => Hash::make('password')
+                    'password' => rand(10000, 100000000)
                 ]);
                 Auth::login($newuser);
                 return redirect()->route('a');
