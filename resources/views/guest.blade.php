@@ -261,7 +261,7 @@
                                                     </div>
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" name="sesi1"
-                                                            id="br4" value="4" required{{ $a4 == 0 ? 'disabled' : '' }}>
+                                                            id="br4" value="4" required {{ $a4 == 0 ? 'disabled' : '' }}>
                                                         <label class="form-check-label" for="br4">
                                                             Kelas Teknik
                                                             <h9
@@ -400,7 +400,7 @@
 
 
                                         <div class="form-group">
-                                            <button type="submit" class="btn btn-primary btn-lg">
+                                            <button {{ (($a1 > 0 || $a2 > 0 || $a3 > 0 || $a4 > 0 || $a5 > 0 ) && ($b1 > 0 || $b2 > 0 || $b3 > 0 || $b4 > 0 || $b5 > 0)) ? '' : 'disabled' }} type="submit" class="btn btn-primary btn-lg">
                                                 Daftar
                                             </button>
                                             <!--<a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#pengerjaan">
