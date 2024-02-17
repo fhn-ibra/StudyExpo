@@ -368,16 +368,6 @@
                                             <select id="kelas" class="form-control" name="kelas" required=""
                                                 onchange="myFunction1()">
                                                 <option value="" selected disabled>Pilih kelas beserta jurusan</option>
-                                                <option value="XII-RPL 1">XII-RPL 1</option>
-                                                <option value="XII-RPL 2">XII-RPL 2</option>
-                                                <option value="XII-RPL 3">XII-RPL 3</option>
-                                                <option value="XII-BC 1">XII-BC 1</option>
-                                                <option value="XII-BC 2">XII-BC 2</option>
-                                                <option value="XII-MM 1">XII-MM 1</option>
-                                                <option value="XII-MM 2">XII-MM 2</option>
-                                                <option value="XII-MM 3">XII-MM 3</option>
-                                                <option value="XII-TKJ 1">XII-TKJ 1</option>
-                                                <option value="XII-TKJ 2">XII-TKJ 2</option>
                                                 <option value="XII-IPA 1">XII-IPA 1</option>
                                                 <option value="XII-IPA 2">XII-IPA 2</option>
                                                 <option value="XII-IPA 3">XII-IPA 3</option>
@@ -469,24 +459,24 @@
         y.value = y.value.toUpperCase();
     }
     </script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-@if (session('modal'))    
-<script>
+    @if (session('modal'))
+    <script>
     Swal.fire({
-  icon: "error",
-  title: "Oops...",
-  text: "Sepertinya Tiket Sudah Tidak Tersedia",
-});
-</script>
-@endif
+        icon: "error",
+        title: "Oops...",
+        text: "Sepertinya Tiket Sudah Tidak Tersedia",
+    });
+    </script>
+    @endif
 
-@if (session('error'))    
-<script>
+    @if (session('error'))
+    <script>
     Swal.fire({
-  icon: "error",
-  title: "Oops...",
-  text: "Anda Tidak Bisa Memilih 2 Kelas Yang Sama",
-});
-</script>
-@endif
+        icon: "error",
+        title: "Oops...",
+        text: "Anda Tidak Bisa Memilih 2 Kelas Yang Sama",
+    });
+    </script>
+    @endif
