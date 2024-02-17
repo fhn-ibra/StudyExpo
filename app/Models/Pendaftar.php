@@ -19,12 +19,12 @@ class Pendaftar extends Model
         'id_user',
     ];
 
-    public function sesi1()
+    public function sesiSatu()
     {
         return $this->belongsTo(Sesi1::class, 'sesi1', 'id');
     }
 
-    public function sesi2()
+    public function sesiDua()
     {
         return $this->belongsTo(Sesi2::class, 'sesi2', 'id');
     }

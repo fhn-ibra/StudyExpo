@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\GoogleController;
 
 /*
@@ -25,6 +26,5 @@ Route::get('/google', function () {
 Route::get('auth/google', [GoogleController::class, 'redirectGoogle'])->name('auth.google');
 Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
 
-Route::get('/tabel', function () {
-    return view('table');
-});
+Route::get('/pendaftar', [AdminController::class, 'pendaftar'])->name('pendaftar');
+Route::get('/sesi1', [AdminController::class, 'sesi1'])->name('sesi1');
