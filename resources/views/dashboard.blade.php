@@ -49,12 +49,14 @@
         }
     });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <sb-customizer project="sb-admin-pro"></sb-customizer>
     <script defer
         src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
         integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
         data-cf-beacon='{"rayId":"85671c0028468216","version":"2024.2.0","token":"6e2c2575ac8f44ed824cef7899ba8463"}'
         crossorigin="anonymous"></script>
+        @stack('js')
 </body>
 
 </html>

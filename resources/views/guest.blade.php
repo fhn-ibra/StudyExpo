@@ -227,55 +227,55 @@
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" name="sesi1"
                                                             id="br1" value="1" required
-                                                            {{ $a1 == 0 ? 'disabled' : '' }}>
+                                                            {{ $a1 <= 0 ? 'disabled' : '' }}>
                                                         <label class="form-check-label" for="br1">
                                                             Kelas Ekonomi Bisnis
                                                             <h9
-                                                                style="color: {{ $a1 == 0 ? 'red' : 'rgb(0, 216, 36)' }};">
+                                                                style="color: {{ $a1 <= 0 ? 'red' : 'rgb(0, 216, 36)' }};">
                                                                 ({{ $a1 }} Tiket)</h9>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" name="sesi1"
                                                             id="br2" value="1" required
-                                                            {{ $a2 == 0 ? 'disabled' : '' }}>
+                                                            {{ $a2 <= 0 ? 'disabled' : '' }}>
                                                         <label class="form-check-label" for="br2">
                                                             Kelas Sosial Politik
                                                             <h9
-                                                                style="color: {{ $a2 == 0 ? 'red' : 'rgb(0, 216, 36)' }};">
+                                                                style="color: {{ $a2 <= 0 ? 'red' : 'rgb(0, 216, 36)' }};">
                                                                 ({{ $a2 }} Tiket)</h9>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" name="sesi1"
                                                             id="br3" value="1" required
-                                                            {{ $a3 == 0 ? 'disabled' : '' }}>
+                                                            {{ $a3 <= 0 ? 'disabled' : '' }}>
                                                         <label class="form-check-label" for="br3">
                                                             Kelas Hukum
                                                             <h9
-                                                                style="color: {{ $a3 == 0 ? 'red' : 'rgb(0, 216, 36)' }};">
+                                                                style="color: {{ $a3 <= 0 ? 'red' : 'rgb(0, 216, 36)' }};">
                                                                 ({{ $a3 }} Tiket)</h9>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" name="sesi1"
                                                             id="br4" value="4" required
-                                                            {{ $a4 == 0 ? 'disabled' : '' }}>
+                                                            {{ $a4 <= 0 ? 'disabled' : '' }}>
                                                         <label class="form-check-label" for="br4">
                                                             Kelas Teknik
                                                             <h9
-                                                                style="color: {{ $a4 == 0 ? 'red' : 'rgb(0, 216, 36)' }};">
+                                                                style="color: {{ $a4 <= 0 ? 'red' : 'rgb(0, 216, 36)' }};">
                                                                 ({{ $a4 }} Tiket)</h9>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" name="sesi1"
                                                             id="br5" value="5" required
-                                                            {{ $a5 == 0 ? 'disabled' : '' }}>
+                                                            {{ $a5 <= 0 ? 'disabled' : '' }}>
                                                         <label class="form-check-label" for="br5">
                                                             Kelas Kedokteran
                                                             <h9
-                                                                style="color: {{ $a5 == 0 ? 'red' : 'rgb(0, 216, 36)' }};">
+                                                                style="color: {{ $a5 <= 0 ? 'red' : 'rgb(0, 216, 36)' }};">
                                                                 ({{ $a5 }} Tiket)</h9>
                                                         </label>
                                                     </div>
@@ -295,55 +295,55 @@
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" name="sesi2"
                                                             id="br6" value="1" required
-                                                            {{ $b1 == 0 ? 'disabled' : '' }}>
+                                                            {{ $b1 <= 0 ? 'disabled' : '' }}>
                                                         <label class="form-check-label" for="br6">
                                                             Kelas Ekonomi Bisnis
                                                             <h9
-                                                                style="color: {{ $b1 == 0 ? 'red' : 'rgb(0, 216, 36)' }};">
+                                                                style="color: {{ $b1 <= 0 ? 'red' : 'rgb(0, 216, 36)' }};">
                                                                 ({{ $b1 }} Tiket)</h9>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" name="sesi2"
                                                             id="br7" value="2" required
-                                                            {{ $b2 == 0 ? 'disabled' : '' }}>
+                                                            {{ $b2 <= 0 ? 'disabled' : '' }}>
                                                         <label class="form-check-label" for="br7">
                                                             Kelas Sosial Politik
                                                             <h9
-                                                                style="color: {{ $b2 == 0 ? 'red' : 'rgb(0, 216, 36)' }};">
+                                                                style="color: {{ $b2 <= 0 ? 'red' : 'rgb(0, 216, 36)' }};">
                                                                 ({{ $b2 }} Tiket)</h9>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" name="sesi2"
                                                             id="br8" value="3" required
-                                                            {{ $b3 == 0 ? 'disabled' : '' }}>
+                                                            {{ $b3 <= 0 ? 'disabled' : '' }}>
                                                         <label class="form-check-label" for="br8">
                                                             Kelas Hukum
                                                             <h9
-                                                                style="color: {{ $b3 == 0 ? 'red' : 'rgb(0, 216, 36)' }};">
+                                                                style="color: {{ $b3 <= 0 ? 'red' : 'rgb(0, 216, 36)' }};">
                                                                 ({{ $b3 }} Tiket)</h9>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" name="sesi2"
                                                             id="br9" value="4" required
-                                                            {{ $b4 == 0 ? 'disabled' : '' }}>
+                                                            {{ $b4 <= 0 ? 'disabled' : '' }}>
                                                         <label class="form-check-label" for="br9">
                                                             Kelas Teknik
                                                             <h9
-                                                                style="color: {{ $b4 == 0 ? 'red' : 'rgb(0, 216, 36)' }};">
+                                                                style="color: {{ $b4 <= 0 ? 'red' : 'rgb(0, 216, 36)' }};">
                                                                 ({{ $b4 }} Tiket)</h9>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" name="sesi2"
                                                             id="br10" value="5" required
-                                                            {{ $b5 == 0 ? 'disabled' : '' }}>
+                                                            {{ $b5 <= 0 ? 'disabled' : '' }}>
                                                         <label class="form-check-label" for="br10">
                                                             Kelas Kedokteran
                                                             <h9
-                                                                style="color: {{ $b5 == 0 ? 'red' : 'rgb(0, 216, 36)' }};">
+                                                                style="color: {{ $b5 <= 0 ? 'red' : 'rgb(0, 216, 36)' }};">
                                                                 ({{ $b5 }} Tiket)</h9>
                                                         </label>
                                                     </div>
@@ -388,13 +388,9 @@
                                                 <option value="XII-IPS 4">XII-IPS 4</option>
                                                 <option value="XII-IPS 5">XII-IPS 5</option>
 
-                                                <option value=<!-- Add more options as needed -->
                                             </select>
                                             <div class="invalid-feedback">
                                                 Mohon disi kelas
-                                            </div>
-                                            <div style="color:red">
-                                                Contoh: XI-PPLG 3
                                             </div>
                                         </div>
 
@@ -410,16 +406,6 @@
                                             </div>
                                         </div>
 
-
-
-
-
-
-
-
-
-
-
                                         <div class="form-group">
                                             <button
                                                 {{ (($a1 > 0 || $a2 > 0 || $a3 > 0 || $a4 > 0 || $a5 > 0 ) && ($b1 > 0 || $b2 > 0 || $b3 > 0 || $b4 > 0 || $b5 > 0)) ? '' : 'disabled' }}
@@ -427,7 +413,7 @@
                                                 Daftar
                                             </button>
                                             <a href="{{ route('logout') }}" class="btn btn-primary btn-lg">
-                                                Kembali
+                                                Logout
                                             </a>
                                             <!--<a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#pengerjaan">
                                 <i class="fas fa-rocket"></i> Daftar
@@ -483,3 +469,24 @@
         y.value = y.value.toUpperCase();
     }
     </script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+@if (session('modal'))    
+<script>
+    Swal.fire({
+  icon: "error",
+  title: "Oops...",
+  text: "Sepertinya Tiket Sudah Tidak Tersedia",
+});
+</script>
+@endif
+
+@if (session('error'))    
+<script>
+    Swal.fire({
+  icon: "error",
+  title: "Oops...",
+  text: "Anda Tidak Bisa Memilih 2 Kelas Yang Sama",
+});
+</script>
+@endif

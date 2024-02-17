@@ -40,10 +40,23 @@ class PendaftarController extends Controller
 
         $sesi1 = Sesi1::findOrFail($request->sesi1);
         $sesi2 = Sesi2::findOrFail($request->sesi2);
+        
+        if ($sesi1->stok <= 0) {
+            return redirect()->back()->with(['modal' => true]);
+        }
+
+        
+        if ($sesi2->stok <= 0) {
+            return redirect()->back()->with(['modal' => true]);
+        }
+
+        if($sesi1->id == $sesi2->id){
+            return redirect()->back()->with(['error' => true]);
+        }
+        
         $sesi1->stok -= 1;
         $sesi1->save();
 
-        // Kurangi stok sesi2
         $sesi2->stok -= 1;
         $sesi2->save();
         

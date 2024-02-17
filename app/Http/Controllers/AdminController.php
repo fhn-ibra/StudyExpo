@@ -48,6 +48,20 @@ class AdminController extends Controller
 
     public function delete_pendaftar($id){
         Pendaftar::destroy($id);
-        return redirect()->route('pendaftar')->with(['berhasil' => true]);
+        return redirect()->route('pendaftar')->with(['delete' => true]);
+    }
+
+    public function edit1(Request $request, $id){
+        $data = Sesi1::find($id);
+        $data->stok = $request->stok;
+        $data->save();
+        return redirect()->route('sesi1')->with(['modal' => true]);
+    }
+
+    public function edit2(Request $request, $id){
+        $data = Sesi2::find($id);
+        $data->stok = $request->stok;
+        $data->save();
+        return redirect()->route('sesi2')->with(['modal' => true]);
     }
 }

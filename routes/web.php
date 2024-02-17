@@ -43,7 +43,11 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/delete-pendaftar/{id}', [AdminController::class, 'delete_pendaftar']);
     
 Route::get('/sesi1', [AdminController::class, 'sesi1'])->name('sesi1');
+Route::post('/edit-sesi1/{id}', [AdminController::class, 'edit1']);
+
+
 Route::get('/sesi2', [AdminController::class, 'sesi2'])->name('sesi2');
+Route::post('/edit-sesi2/{id}', [AdminController::class, 'edit2']);
 
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 });

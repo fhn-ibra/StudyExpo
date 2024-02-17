@@ -41,10 +41,37 @@
                             <td>{{ $item->nama_tiket }}</td>
                             <td>{{ $item->stok }}</td>
                             <td>
-                                <button class="btn btn-datatable btn-icon btn-transparent-dark"><i class="fa-solid fa-pen"></i></button>
-                                <button class="btn btn-datatable btn-icon btn-transparent-dark"><i class="fa-solid fa-user"></i></button>
+                                <button class="btn btn-datatable btn-icon btn-transparent-dark" type="button"
+                                data-bs-toggle="modal" data-bs-target="#editModal{{ $item->id }}"><i
+                                    class="fa-solid fa-pen"></i></button>
+                                {{-- <button class="btn btn-datatable btn-icon btn-transparent-dark"><i class="fa-solid fa-user"></i></button> --}}
                             </td>
                         </tr>
+
+                        <div class="modal fade" id="editModal{{ $item->id }}" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalCenterTitle">Edit Data</h5>
+                                        <button class="btn-close" type="button" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="/edit-sesi2/{{ $item->id }}" method="post">
+                                            @csrf
+                                            <div class="form-group">
+                                                <label for="exampleInputPassword1">Stok</label>
+                                                <input type="text" class="form-control" name="stok" value="{{ $item->stok }}">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-secondary" type="button"data-bs-dismiss="modal">Tutup</button>
+                                            <button class="btn btn-primary" type="submit">Simpan</button>
+                                        </form>
+                                </div>
+                            </div>
+                        </div>
                         @endforeach
                     </tbody>
                 </table>
@@ -53,3 +80,15 @@
     </div>
 </main>
 @endsection
+
+@if (session('modal'))
+    @push('js')
+        <script>
+            Swal.fire({
+                title: "Berhasil",
+                text: "Stok telah di Update!",
+                icon: "success"
+            });
+        </script>
+    @endpush
+@endif
