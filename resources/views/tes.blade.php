@@ -1,1 +1,1 @@
-<a href="{{ route('auth.google') }}">asdasd</a>
+<a href="{{ route('auth.google') }}">Login Memakai Akun Gmail </a>
