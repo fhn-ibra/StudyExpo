@@ -365,9 +365,31 @@
                                         </div>
                                         <div class="form-group col-6">
                                             <label for="last_name">Kelas</label>
-                                            <input id="asalSekolah" type="text" class="form-control" name="kelas"
-                                                placeholder="Kelas beserta jurusan " required=""
-                                                onkeyup="myFunction1()">
+                                            <select id="kelas" class="form-control" name="kelas" required=""
+                                                onchange="myFunction1()">
+                                                <option value="" selected disabled>Pilih kelas beserta jurusan</option>
+                                                <option value="XII-RPL 1">XII-RPL 1</option>
+                                                <option value="XII-RPL 2">XII-RPL 2</option>
+                                                <option value="XII-RPL 3">XII-RPL 3</option>
+                                                <option value="XII-BC 1">XII-BC 1</option>
+                                                <option value="XII-BC 2">XII-BC 2</option>
+                                                <option value="XII-MM 1">XII-MM 1</option>
+                                                <option value="XII-MM 2">XII-MM 2</option>
+                                                <option value="XII-MM 3">XII-MM 3</option>
+                                                <option value="XII-TKJ 1">XII-TKJ 1</option>
+                                                <option value="XII-TKJ 2">XII-TKJ 2</option>
+                                                <option value="XII-IPA 1">XII-IPA 1</option>
+                                                <option value="XII-IPA 2">XII-IPA 2</option>
+                                                <option value="XII-IPA 3">XII-IPA 3</option>
+                                                <option value="XII-IPA 4">XII-IPA 4</option>
+                                                <option value="XII-IPS 1">XII-IPS 1</option>
+                                                <option value="XII-IPS 2">XII-IPS 2</option>
+                                                <option value="XII-IPS 3">XII-IPS 3</option>
+                                                <option value="XII-IPS 4">XII-IPS 4</option>
+                                                <option value="XII-IPS 5">XII-IPS 5</option>
+
+                                                <option value=<!-- Add more options as needed -->
+                                            </select>
                                             <div class="invalid-feedback">
                                                 Mohon disi kelas
                                             </div>
@@ -404,6 +426,9 @@
                                                 type="submit" class="btn btn-primary btn-lg">
                                                 Daftar
                                             </button>
+                                            <a href="{{ route('logout') }}" class="btn btn-primary btn-lg">
+                                                Kembali
+                                            </a>
                                             <!--<a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#pengerjaan">
                                 <i class="fas fa-rocket"></i> Daftar
                             </a>-->
