@@ -289,10 +289,10 @@
 
 
                                     <div class="form-group">
-                                        <h9 style="color: red;"> * Screenshot / Donwload Pdf untuk bukti! </h9>
+                                        <h9 style="color: red;"> * Screenshot / Download PDF untuk bukti! </h9>
                                         <br>
                                         <a href="{{ route('print') }}" class="btn btn-primary btn-lg">
-                                            Donwload Pdf
+                                            Download PDF
                                         </a>
 
                                         <a href="{{ route('logout') }}" class="btn btn-primary btn-lg">

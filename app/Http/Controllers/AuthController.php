@@ -7,8 +7,17 @@ use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
-    public function login(){
+    public function login(Request $request){
+        $credentials = $request->validate([
+            'email' => 'required',
+            'password' => 'required',
+        ]);
 
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+            return redirect()->route('pendaftar');
+        }
+        return redirect()->route('login');
     }
 
     public function logout(){

@@ -228,10 +228,10 @@
                                                 <div class="col-sm-10">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" name="sesi1"
-                                                            id="br1" value="1" required>
+                                                            id="br1" value="1" required {{ $a1 == 0 ? 'disabled' : '' }}>
                                                         <label class="form-check-label" for="br1">
                                                             Kelas Ekonomi Bisnis
-                                                            <h9 style="color: red;"> ( * Tersedia )</h9>
+                                                            <h9 style="color: {{ $a1 == 0 ? 'red' : 'rgb(0, 216, 36)' }};"> ({{ $a1 }} Tiket)</h9>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
@@ -239,7 +239,7 @@
                                                             id="br2" value="2" required>
                                                         <label class="form-check-label" for="br2">
                                                             Kelas Sosial Politik
-                                                            <h9 style="color: red;"> ( * Tersedia )</h9>
+                                                            <h9 style="color: ;"> ( * Tersedia )</h9>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
@@ -272,7 +272,6 @@
                                                 Mohon diisi sesi1
                                             </div>
                                         </div>
-
 
 
                                         <div class="form-group col-6">
@@ -345,7 +344,7 @@
                                                 Mohon disi kelas
                                             </div>
                                             <div style="color:red">
-                                                Contoh: XI PPLG 3
+                                                Contoh: XI-PPLG 3
                                             </div>
                                         </div>
 

@@ -93,7 +93,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-6"><b>Copyright © <a
-                                            href="https://www.instagram.com/ibrbbra?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">ibra</a>
+                                            href="https://www.instagram.com/ibrbbra?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Ibra</a>
                                         & <a
                                             href="https://www.instagram.com/e_erlanggaa?igsh=OGQ5ZDc2ODk2ZA==">Erlangga</a>
                                         2024</b></div>

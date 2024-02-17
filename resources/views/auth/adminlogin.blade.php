@@ -31,7 +31,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <form action="#!">
+                            <form action="{{ route('admin-proses') }}" method="POST">
+                                @csrf
                                 <div class="row gy-3 gy-md-4 overflow-hidden">
                                     <div class="col-12">
                                         <label for="email" class="form-label">Email <span
@@ -44,15 +45,6 @@
                                                 class="text-danger">*</span></label>
                                         <input type="password" class="form-control" name="password" id="password"
                                             value="" required>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" name="remember_me"
-                                                id="remember_me">
-                                            <label class="form-check-label text-secondary" for="remember_me">
-                                                Keep me logged in
-                                            </label>
-                                        </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="d-grid">
@@ -98,7 +90,7 @@
 
                             <div class="row">
                                 <div class="col-md-6"><b>Copyright © <a
-                                            href="https://www.instagram.com/ibrbbra?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">ibra</a>
+                                            href="https://www.instagram.com/ibrbbra?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Ibra</a>
                                         & <a
                                             href="https://www.instagram.com/e_erlanggaa?igsh=OGQ5ZDc2ODk2ZA==">Erlangga</a>
                                         2024</b></div>

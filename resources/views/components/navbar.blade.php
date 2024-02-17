@@ -18,10 +18,11 @@
                     <h6 class="dropdown-header d-flex align-items-center">
                         <img class="dropdown-user-img" src="img/user.png" />
                         <div class="dropdown-user-details">
-                            <div class="dropdown-user-details-name">Valerie Luna</div>
+                            <div class="dropdown-user-details-name">{{ Auth::user()->name }}</div>
+                            <div class="dropdown-user">{{ Auth::user()->email }}</div>
                     </h6>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#!">
+                    <a class="dropdown-item" href="{{ route('logout') }}">
                         <div class="dropdown-item-icon"><i data-feather="log-out"></i></div>
                         Logout
                     </a>

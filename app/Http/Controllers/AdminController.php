@@ -45,4 +45,9 @@ class AdminController extends Controller
             ]);
         }
     }
+
+    public function delete_pendaftar($id){
+        Pendaftar::destroy($id);
+        return redirect()->route('pendaftar')->with(['berhasil' => true]);
+    }
 }

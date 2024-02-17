@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use PDF;
+use App\Models\Sesi1;
+use App\Models\Sesi2;
 use App\Models\Pendaftar;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use PDF;
 
 class PendaftarController extends Controller
 {
@@ -16,7 +18,18 @@ class PendaftarController extends Controller
             if($validasi != null) {
                 return redirect()->route('cetak');
             } else {
-                return view('guest');
+                return view('guest', [
+                    'a1' => Sesi1::where('id', 1)->value('stok'),
+                    'a2' => Sesi1::where('id', 2)->value('stok'),
+                    'a3' => Sesi1::where('id', 3)->value('stok'),
+                    'a4' => Sesi1::where('id', 4)->value('stok'),
+                    'a5' => Sesi1::where('id', 5)->value('stok'),
+                    'b1' => Sesi2::where('id', 1)->value('stok'),
+                    'b2' => Sesi2::where('id', 2)->value('stok'),
+                    'b3' => Sesi2::where('id', 3)->value('stok'),
+                    'b4' => Sesi2::where('id', 4)->value('stok'),
+                    'b5' => Sesi2::where('id', 5)->value('stok'),
+            ]);
             }
         } else {
             return redirect()->route('pendaftar');
@@ -24,6 +37,15 @@ class PendaftarController extends Controller
     }
 
     public function save(Request $request){
+
+        $sesi1 = Sesi1::findOrFail($request->sesi1);
+        $sesi2 = Sesi2::findOrFail($request->sesi2);
+        $sesi1->stok -= 1;
+        $sesi1->save();
+
+        // Kurangi stok sesi2
+        $sesi2->stok -= 1;
+        $sesi2->save();
         
         $pendaftar = new Pendaftar();
         $pendaftar->nama = $request->nama;
