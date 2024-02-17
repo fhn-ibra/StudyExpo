@@ -10,6 +10,14 @@
     <link href="https://ppdb.prestasiprima.sch.id/assets/assets/img/favicon.png" rel="icon">
     <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.3/components/logins/login-4/assets/css/login-4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha384-GLhlTQ8iNl4DkByiz3P/CmJ53QfGT++pz2Utbpa0kLXL5mz5lTzM5Pa9Pb4W8jz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha384-GLhlTQ8iNl4DkByiz3P/CmJ53QfGT++pz2Utbpa0kLXL5mz5lTzM5Pa9Pb4W8jz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha384-dRpbz7zjRglGGUnE4A5f5QXe59viV38z/zioM/u4Z+6LrwT5yzjKd8kCZHv7EdFd" crossorigin="anonymous">
+
+
 </head>
 
 <body class="nav-fixed">
@@ -83,13 +91,24 @@
                                             </svg>
                                             <span class="ms-2 fs-6">Google</span>
                                         </a>
+                                        <br>
 
+
+
+
+                                        <button
+                                            onclick="window.location.href='https://drive.google.com/file/d/1jQTLxCUyNiIzo3-7_xeH9T__1nrSkG4i/view?usp=drive_link'"
+                                            class=" btn btn-primary btn-lg">
+                                            <span class="ms-2 fs-6">Manual Book</span>
+
+                                        </button>
                                     </div>
                                     <br>
                                     <br>
                                     <br>
 
                                 </div>
+
                             </div>
                             <div class="row">
                                 <div class="col-md-6"><b>Copyright © <a
