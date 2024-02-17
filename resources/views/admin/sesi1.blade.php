@@ -8,8 +8,8 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-auto mt-4">
                         <h1 class="page-header-title">
-                            <div class="page-header-icon"><i data-feather="layout"></i></div>
-                            Tabel Kelas Sesi 1
+                            <div class="page-header-icon"><i data-feather="grid"></i></div>
+                            Kelas Sesi 1
                         </h1>
                     </div>
                 </div>

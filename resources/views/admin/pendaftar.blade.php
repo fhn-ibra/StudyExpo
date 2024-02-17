@@ -9,7 +9,7 @@
                     <div class="col-auto mt-4">
                         <h1 class="page-header-title">
                             <div class="page-header-icon"><i data-feather="layout"></i></div>
-                            Tabel Pendaftar
+                            Pendaftar
                         </h1>
                     </div>
                 </div>

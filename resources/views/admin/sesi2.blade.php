@@ -8,8 +8,8 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-auto mt-4">
                         <h1 class="page-header-title">
-                            <div class="page-header-icon"><i data-feather="layout"></i></div>
-                            Tabel Pendaftar
+                            <div class="page-header-icon"><i data-feather="grid"></i></div>
+                            Kelas Sesi 2
                         </h1>
                     </div>
                 </div>
@@ -18,40 +18,31 @@
     <!-- Main page content-->
     <div class="container-xl px-4 mt-n10">
         <div class="card mb-4">
-            <div class="card-header">Pendaftar</div>
+            <div class="card-header">Kelas Sesi 2</div>
             <div class="card-body">
                 <table id="datatablesSimple">
                     <thead>
                         <tr>
-                            <th>Nama Lengkap</th>
-                            <th>Kelas</th>
-                            <th>No. Telp</th>
-                            <th>Sesi 1</th>
-                            <th>Sesi 2</th>
+                            <th>Nama Tiket</th>
+                            <th>Stok</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
                     <tfoot>
                         <tr>
-                            <th>Nama Lengkap</th>
-                            <th>Kelas</th>
-                            <th>No. Telp</th>
-                            <th>Sesi 1</th>
-                            <th>Sesi 2</th>
+                            <th>Nama Tiket</th>
+                            <th>Stok</th>
                             <th>Aksi</th>
                         </tr>
                     </tfoot>
                     <tbody>
-                        @foreach ($pendaftar as $item)     
+                        @foreach ($sesi1 as $item)     
                         <tr>
-                            <td>{{ $item->nama }}</td>
-                            <td>{{ $item->kelas }}</td>
-                            <td>{{ $item->no }}</td>
-                            <td>{{ $item->sesiSatu->nama_tiket }}</td>
-                            <td>{{ $item->sesiDua->nama_tiket }}</td>
+                            <td>{{ $item->nama_tiket }}</td>
+                            <td>{{ $item->stok }}</td>
                             <td>
-                                <button class="btn btn-datatable btn-icon btn-transparent-dark"><i
-                                        class="fa-solid fa-trash-can"></i></button>
+                                <button class="btn btn-datatable btn-icon btn-transparent-dark"><i class="fa-solid fa-pen"></i></button>
+                                <button class="btn btn-datatable btn-icon btn-transparent-dark"><i class="fa-solid fa-user"></i></button>
                             </td>
                         </tr>
                         @endforeach

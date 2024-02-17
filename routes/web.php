@@ -15,14 +15,14 @@ use App\Http\Controllers\GoogleController;
 |
 */
 Route::get('/', function () {
-    return view('guestlogin');
+    return view('auth.guestlogin');
 });
 Route::get('/daftar', function () {
     return view('guest');
 })->name('guest');
 
 Route::get('/alogin', function () {
-    return view('adminlogin');
+    return view('auth.adminlogin');
 });
 
 
@@ -31,3 +31,4 @@ Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallba
 
 Route::get('/pendaftar', [AdminController::class, 'pendaftar'])->name('pendaftar');
 Route::get('/sesi1', [AdminController::class, 'sesi1'])->name('sesi1');
+Route::get('/sesi2', [AdminController::class, 'sesi2'])->name('sesi2');

@@ -14,7 +14,7 @@
                 <div class="collapse" id="collapsePages" data-bs-parent="#accordionSidenav">
                     <nav class="sidenav-menu-nested nav accordion" id="accordionSidenavPagesMenu">
                         <a class="nav-link {{ $title == 'Sesi 1' ? 'active' : '' }}" href="{{ route('sesi1') }}">Sesi 1</a>
-                        <a class="nav-link" href="invoice.html">Sesi 2</a>
+                        <a class="nav-link  {{ $title == 'Sesi 2' ? 'active' : '' }}" href="{{ route('sesi2') }}">Sesi 2</a>
                     </nav>
                 </div>
                 <!-- Sidenav Link (Tables)-->
