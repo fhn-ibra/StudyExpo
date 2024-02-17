@@ -216,8 +216,8 @@
 
                             <div class="card-body">
 
-                                <form id="form-register" action="{{ route('daftar-guest') }}" method="POST" class="needs-validation"
-                                    novalidate="">
+                                <form id="form-register" action="{{ route('daftar-guest') }}" method="POST"
+                                    class="needs-validation" novalidate="">
                                     @csrf
 
                                     <div class="row">
@@ -228,42 +228,56 @@
                                                 <div class="col-sm-10">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" name="sesi1"
-                                                            id="br1" value="1" required {{ $a1 == 0 ? 'disabled' : '' }}>
+                                                            id="br1" value="1" required
+                                                            {{ $a1 == 0 ? 'disabled' : '' }}>
                                                         <label class="form-check-label" for="br1">
                                                             Kelas Ekonomi Bisnis
-                                                            <h9 style="color: {{ $a1 == 0 ? 'red' : 'rgb(0, 216, 36)' }};"> ({{ $a1 }} Tiket)</h9>
+                                                            <h9
+                                                                style="color: {{ $a1 == 0 ? 'red' : 'rgb(0, 216, 36)' }};">
+                                                                ({{ $a1 }} Tiket)</h9>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" name="sesi1"
-                                                            id="br2" value="2" required>
+                                                            id="br2" value="1" required
+                                                            {{ $a2 == 0 ? 'disabled' : '' }}>
                                                         <label class="form-check-label" for="br2">
                                                             Kelas Sosial Politik
-                                                            <h9 style="color: ;"> ( * Tersedia )</h9>
+                                                            <h9
+                                                                style="color: {{ $a2 == 0 ? 'red' : 'rgb(0, 216, 36)' }};">
+                                                                ({{ $a2 }} Tiket)</h9>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" name="sesi1"
-                                                            id="br3" value="3" required>
+                                                            id="br3" value="1" required
+                                                            {{ $a3 == 0 ? 'disabled' : '' }}>
                                                         <label class="form-check-label" for="br3">
                                                             Kelas Hukum
-                                                            <h9 style="color: red;"> ( * Tersedia )</h9>
+                                                            <h9
+                                                                style="color: {{ $a3 == 0 ? 'red' : 'rgb(0, 216, 36)' }};">
+                                                                ({{ $a3 }} Tiket)</h9>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" name="sesi1"
-                                                            id="br4" value="4" required>
+                                                            id="br4" value="4" required{{ $a4 == 0 ? 'disabled' : '' }}>
                                                         <label class="form-check-label" for="br4">
                                                             Kelas Teknik
-                                                            <h9 style="color: red;"> ( * Tersedia )</h9>
+                                                            <h9
+                                                                style="color: {{ $a4 == 0 ? 'red' : 'rgb(0, 216, 36)' }};">
+                                                                ({{ $a4 }} Tiket)</h9>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" name="sesi1"
-                                                            id="br5" value="5" required>
+                                                            id="br5" value="5" required
+                                                            {{ $a5 == 0 ? 'disabled' : '' }}>
                                                         <label class="form-check-label" for="br5">
                                                             Kelas Kedokteran
-                                                            <h9 style="color: red;"> ( * Tersedia )</h9>
+                                                            <h9
+                                                                style="color: {{ $a5 == 0 ? 'red' : 'rgb(0, 216, 36)' }};">
+                                                                ({{ $a5 }} Tiket)</h9>
                                                         </label>
                                                     </div>
                                                 </div>
@@ -281,42 +295,57 @@
                                                 <div class="col-sm-10">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" name="sesi2"
-                                                            id="br6" value="1" required>
+                                                            id="br6" value="1" required
+                                                            {{ $b1 == 0 ? 'disabled' : '' }}>
                                                         <label class="form-check-label" for="br6">
                                                             Kelas Ekonomi Bisnis
-                                                            <h9 style="color: red;"> ( * Tersedia )</h9>
+                                                            <h9
+                                                                style="color: {{ $b1 == 0 ? 'red' : 'rgb(0, 216, 36)' }};">
+                                                                ({{ $b1 }} Tiket)</h9>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" name="sesi2"
-                                                            id="br7" value="2" required>
+                                                            id="br7" value="2" required
+                                                            {{ $b2 == 0 ? 'disabled' : '' }}>
                                                         <label class="form-check-label" for="br7">
                                                             Kelas Sosial Politik
-                                                            <h9 style="color: red;"> ( * Tersedia )</h9>
+                                                            <h9
+                                                                style="color: {{ $b2 == 0 ? 'red' : 'rgb(0, 216, 36)' }};">
+                                                                ({{ $b2 }} Tiket)</h9>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" name="sesi2"
-                                                            id="br8" value="3" required>
+                                                            id="br8" value="3" required
+                                                            {{ $b3 == 0 ? 'disabled' : '' }}>
                                                         <label class="form-check-label" for="br8">
                                                             Kelas Hukum
-                                                            <h9 style="color: red;"> ( * Tersedia )</h9>
+                                                            <h9
+                                                                style="color: {{ $b3 == 0 ? 'red' : 'rgb(0, 216, 36)' }};">
+                                                                ({{ $b3 }} Tiket)</h9>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" name="sesi2"
-                                                            id="br9" value="4" required>
+                                                            id="br9" value="4" required
+                                                            {{ $b4 == 0 ? 'disabled' : '' }}>
                                                         <label class="form-check-label" for="br9">
                                                             Kelas Teknik
-                                                            <h9 style="color: red;"> ( * Tersedia )</h9>
+                                                            <h9
+                                                                style="color: {{ $b4 == 0 ? 'red' : 'rgb(0, 216, 36)' }};">
+                                                                ({{ $b4 }} Tiket)</h9>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" name="sesi2"
-                                                            id="br10" value="5" required>
+                                                            id="br10" value="5" required
+                                                            {{ $b5 == 0 ? 'disabled' : '' }}>
                                                         <label class="form-check-label" for="br10">
                                                             Kelas Kedokteran
-                                                            <h9 style="color: red;"> ( * Tersedia )</h9>
+                                                            <h9
+                                                                style="color: {{ $b5 == 0 ? 'red' : 'rgb(0, 216, 36)' }};">
+                                                                ({{ $b5 }} Tiket)</h9>
                                                         </label>
                                                     </div>
                                                 </div>
