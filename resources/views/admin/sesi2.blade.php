@@ -25,29 +25,32 @@
                         <tr>
                             <th>Nama Tiket</th>
                             <th>Stok</th>
-                            <th>Aksi</th>
+                            {{ Auth::user()->level == 'admin' ? '<th>Aksi</th>' : '' }}
                         </tr>
                     </thead>
                     <tfoot>
                         <tr>
                             <th>Nama Tiket</th>
                             <th>Stok</th>
-                            <th>Aksi</th>
+                            {{ Auth::user()->level == 'admin' ? '<th>Aksi</th>' : '' }}
                         </tr>
                     </tfoot>
                     <tbody>
-                        @foreach ($sesi1 as $item)     
+                        @foreach ($sesi2 as $item)     
                         <tr>
                             <td>{{ $item->nama_tiket }}</td>
                             <td>{{ $item->stok }}</td>
+                            @if (Auth::user()->level == 'admin')     
                             <td>
                                 <button class="btn btn-datatable btn-icon btn-transparent-dark" type="button"
                                 data-bs-toggle="modal" data-bs-target="#editModal{{ $item->id }}"><i
                                     class="fa-solid fa-pen"></i></button>
-                                {{-- <button class="btn btn-datatable btn-icon btn-transparent-dark"><i class="fa-solid fa-user"></i></button> --}}
+                                {{-- <a href="#" class="btn btn-datatable btn-icon btn-transparent-dark"><i class="fa-solid fa-user"></i></a> --}}
                             </td>
+                            @endif
                         </tr>
 
+                        @if (Auth::user()->level == 'admin') 
                         <div class="modal fade" id="editModal{{ $item->id }}" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -58,7 +61,7 @@
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <form action="/edit-sesi2/{{ $item->id }}" method="post">
+                                        <form action="/edit-sesi1/{{ $item->id }}" method="post">
                                             @csrf
                                             <div class="form-group">
                                                 <label for="exampleInputPassword1">Stok</label>
@@ -72,6 +75,7 @@
                                 </div>
                             </div>
                         </div>
+                        @endif
                         @endforeach
                     </tbody>
                 </table>

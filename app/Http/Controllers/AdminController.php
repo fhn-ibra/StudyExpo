@@ -40,7 +40,7 @@ class AdminController extends Controller
             return redirect()->route('guest');
         } else {
             return view('admin.sesi2', [
-                'sesi1' => Sesi2::all(),
+                'sesi2' => Sesi2::all(),
                 'title' => 'Sesi 2'
             ]);
         }

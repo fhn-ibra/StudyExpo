@@ -50,15 +50,18 @@
                                     <td>{{ $item->sesiSatu->nama_tiket }}</td>
                                     <td>{{ $item->sesiDua->nama_tiket }}</td>
                                     <td>
+                                        @if (Auth::user()->level == 'admin')
                                         <button class="btn btn-datatable btn-icon btn-transparent-dark" type="button"
                                             data-bs-toggle="modal" data-bs-target="#deleteModal{{ $item->id }}"><i
                                                 class="fa-solid fa-trash-can"></i></button>
+                                                @endif
                                         <button class="btn btn-datatable btn-icon btn-transparent-dark" type="button"
                                             data-bs-toggle="modal" data-bs-target="#detailModal{{ $item->id }}"><i
                                                 class="fa-solid fa-user"></i></button>
                                     </td>
                                 </tr>
 
+                                @if (Auth::user()->level == 'admin')
                                 <div class="modal fade" id="deleteModal{{ $item->id }}" tabindex="-1" role="dialog"
                                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -78,6 +81,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                @endif
 
                                 <div class="modal fade" id="detailModal{{ $item->id }}" tabindex="-1" role="dialog"
                                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
