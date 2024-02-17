@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Pendaftar;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use PDF;
 
 class PendaftarController extends Controller
 {
@@ -44,5 +45,17 @@ class PendaftarController extends Controller
         } else {
             return redirect()->route('guest');
         }
+    }
+    public function print(){
+        $validasi = Pendaftar::where('id_user', Auth::user()->id)->first();
+        if($validasi != null){
+            
+        $pdf = PDF::loadview('print',['data'=>$validasi]);
+        return $pdf->stream();
+        } else {
+            return redirect()->route('guest');
+        }
+
+        
     }
 }

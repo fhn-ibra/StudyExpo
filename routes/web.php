@@ -33,6 +33,7 @@ Route::group(['middleware' => ['auth']], function () {
 Route::get('/daftar', [PendaftarController::class, 'index'])->name('guest');
 Route::post('/daftar-save', [PendaftarController::class, 'save'])->name('daftar-guest');
 
+Route::get('/print', [PendaftarController::class, 'print'])->name('print');
 Route::get('/cetak', [PendaftarController::class, 'cetak'])->name('cetak');
 
 Route::get('/pendaftar', [AdminController::class, 'pendaftar'])->name('pendaftar');
@@ -47,4 +48,3 @@ Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::get('auth/google', [GoogleController::class, 'redirectGoogle'])->name('auth.google');
 Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
-

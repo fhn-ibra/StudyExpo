@@ -5,15 +5,13 @@
         content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <meta content="Daftar Segera di SMK Prestasi Prima dan SMA Prestasi Prima, Sekolah berbasis ICT di Jakarta"
-        name="description">
-    <meta content="Daftar Sekolah Prestasi Prima Tahun 2023 / 2024" name="keywords">
+
     <title>Form Registrasi</title>
     <link href="https://ppdb.prestasiprima.sch.id/assets/assets/img/favicon.png" rel="icon">
     <!-- General CSS Files -->
     <!-- <link rel="shortcut icon" href="/tema/favicon.png" type="image/x-icon" /> -->
     <link rel="stylesheet" href="style/bootstrap.min.css">
-    <link rel="stylesheet" href="https://ppdb.prestasiprima.sch.id/tema/assets/modules/fontawesome/css/all.css">
+    <link rel="stylesheet" href="public\assets\assets\modules\fontawesome\css\all.css">
 
     <!-- CSS Libraries -->
     <link rel="stylesheet"
@@ -26,8 +24,7 @@
 
     <!-- /END GA -->
     <link rel="stylesheet" href="chrome-extension://mhnlakgilnojmhinhkckjpncpbhabphi/content.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="public\stylees.css">
     <style id="_goober">
     .go1475592160 {
         height: 0;
@@ -224,19 +221,15 @@
                                     <div class="row">
                                         <div class="form-group col-6">
                                             <fieldset class="row mb-3" id="s1">
-                                                <h6> Sesi 1 (09.00 - 10.00)</h6>
-                                                <legend class="col-form-label col-sm-2 pt-0">Kelas Minat</legend>
-                                                <div class="col-sm-10">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="gridRadios1"
-                                                            id="br1" value="option1" checked>
-                                                        <label class="form-check-label" for="br1">
-                                                            Kelas {{ $data->sesiSatu->nama_tiket }}
+                                                <h9> Sesi 1 (09.00 - 10.00)</h9>
+                                                <h2 class="col-form-label col-sm-2 pt-0">Kelas Minat</h2>
 
-                                                        </label>
-                                                    </div>
-                                                   
-                                                </div>
+
+                                                <label class="form-check-label" for="br1  ">
+                                                    <b>- Kelas {{ $data->sesiSatu->nama_tiket }}</b>
+
+                                                </label>
+
                                             </fieldset>
                                         </div>
 
@@ -244,52 +237,49 @@
 
                                         <div class="form-group col-6">
                                             <fieldset class="row mb-3" id="s2">
-                                                <h6> Sesi 2 (10.00 - 11.00)</h6>
-                                                <legend class="col-form-label col-sm-2 pt-0">Kelas Minat</legend>
-                                                <div class="col-sm-10">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="gridRadios2"
-                                                            id="br6" value="option1" checked>
-                                                        <label class="form-check-label" for="br6">
-                                                            Kelas {{ $data->sesiDua->nama_tiket }}
-                                                        </label>
-                                                    </div>
-                                                </div>
+                                                <h9> Sesi 1 (09.00 - 10.00)</h9>
+                                                <h2 class="col-form-label col-sm-2 pt-0">Kelas Minat</h2>
+
+
+                                                <label class="form-check-label" for="br1  ">
+                                                    <b>- Kelas {{ $data->sesiDua->nama_tiket }}</b>
+
+                                                </label>
+
+
                                             </fieldset>
                                         </div>
 
                                         <div class="form-group col-6">
                                             <label for="first_name">Nama Lengkap</label>
-                                            <input id="nmPendaftar" type="text" class="form-control" name="nmPendaftar"
-                                                placeholder="Nama Lengkap" value="{{ $data->nama }}" disabled
-                                                onkeyup="myFunction()">
-                                            <div class="invalid-feedback">
-                                                Mohon Nama Lengkap Diisi
-                                            </div>
+                                            <br>
+                                            <h9> {{ $data->nama }} </h9>
+
                                         </div>
                                         <div class="form-group col-6">
                                             <label for="last_name">Kelas</label>
-                                            <input id="asalSekolah" type="text" class="form-control" name="asalSekolah"
-                                                placeholder="Kelas beserta jurusan " value="{{ $data->kelas }}" disabled>
+                                            <br>
+                                            <h9> {{ $data->kelas }} </h9>
+
                                         </div>
 
                                         <div class="form-group col-6">
                                             <label for="first_name">No WhatsApp</label>
-                                            <input id="first_name" type="text" class="form-control" name="hp"
-                                                placeholder="ex. 6281290959xxx" value="{{ $data->no }}" disabled>
-                                        
+                                            <br>
+                                            <h8> {{ $data->no }} </h8>
+
                                         </div>
-                                        </div>
-
-
-
                                     </div>
-                                </form>
-                            </div>
 
+
+
+                            </div>
+                            </form>
                         </div>
+
                     </div>
                 </div>
+            </div>
         </section>
     </div>
 

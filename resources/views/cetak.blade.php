@@ -216,93 +216,94 @@
 
                             <div class="card-body">
 
-                                <form id="form-register" action="/login.html" method="POST" class="needs-validation"
-                                    novalidate="">
-                                    <input type="hidden" name="csrf_token_name"
-                                        value="da02f59bf2f8bc4bd863c2011e42363d">
 
-                                    <div class="row">
-                                        <div class="form-group col-6">
-                                            <fieldset class="row mb-3" id="s1">
-                                                <h6> Sesi 1 (09.00 - 10.00)</h6>
-                                                <legend class="col-form-label col-sm-2 pt-0">Kelas Minat</legend>
-                                                <div class="col-sm-10">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="gridRadios1"
-                                                            id="br1" value="option1" checked>
-                                                        <label class="form-check-label" for="br1">
-                                                            Kelas {{ $data->sesiSatu->nama_tiket }}
+                                <input type="hidden" name="csrf_token_name" value="da02f59bf2f8bc4bd863c2011e42363d">
 
-                                                        </label>
-                                                    </div>
-                                                   
+                                <div class="row">
+                                    <div class="form-group col-6">
+                                        <fieldset class="row mb-3" id="s1">
+                                            <h6> Sesi 1 (09.00 - 10.00)</h6>
+                                            <legend class="col-form-label col-sm-2 pt-0">Kelas Minat</legend>
+                                            <div class="col-sm-10">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="gridRadios1"
+                                                        id="br1" value="option1" checked>
+                                                    <label class="form-check-label" for="br1">
+                                                        Kelas {{ $data->sesiSatu->nama_tiket }}
+
+                                                    </label>
                                                 </div>
-                                            </fieldset>
-                                        </div>
 
-
-
-                                        <div class="form-group col-6">
-                                            <fieldset class="row mb-3" id="s2">
-                                                <h6> Sesi 2 (10.00 - 11.00)</h6>
-                                                <legend class="col-form-label col-sm-2 pt-0">Kelas Minat</legend>
-                                                <div class="col-sm-10">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="gridRadios2"
-                                                            id="br6" value="option1" checked>
-                                                        <label class="form-check-label" for="br6">
-                                                            Kelas {{ $data->sesiDua->nama_tiket }}
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </fieldset>
-                                        </div>
-
-                                        <div class="form-group col-6">
-                                            <label for="first_name">Nama Lengkap</label>
-                                            <input id="nmPendaftar" type="text" class="form-control" name="nmPendaftar"
-                                                placeholder="Nama Lengkap" value="{{ $data->nama }}" disabled
-                                                onkeyup="myFunction()">
-                                            <div class="invalid-feedback">
-                                                Mohon Nama Lengkap Diisi
                                             </div>
+                                        </fieldset>
+                                    </div>
+
+
+
+                                    <div class="form-group col-6">
+                                        <fieldset class="row mb-3" id="s2">
+                                            <h6> Sesi 2 (10.00 - 11.00)</h6>
+                                            <legend class="col-form-label col-sm-2 pt-0">Kelas Minat</legend>
+                                            <div class="col-sm-10">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="gridRadios2"
+                                                        id="br6" value="option1" checked>
+                                                    <label class="form-check-label" for="br6">
+                                                        Kelas {{ $data->sesiDua->nama_tiket }}
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="form-group col-6">
+                                        <label for="first_name">Nama Lengkap</label>
+                                        <input id="nmPendaftar" type="text" class="form-control" name="nmPendaftar"
+                                            placeholder="Nama Lengkap" value="{{ $data->nama }}" disabled
+                                            onkeyup="myFunction()">
+                                        <div class="invalid-feedback">
+                                            Mohon Nama Lengkap Diisi
                                         </div>
-                                        <div class="form-group col-6">
-                                            <label for="last_name">Kelas</label>
-                                            <input id="asalSekolah" type="text" class="form-control" name="asalSekolah"
-                                                placeholder="Kelas beserta jurusan " value="{{ $data->kelas }}" disabled>
-                                        </div>
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="last_name">Kelas</label>
+                                        <input id="asalSekolah" type="text" class="form-control" name="asalSekolah"
+                                            placeholder="Kelas beserta jurusan " value="{{ $data->kelas }}" disabled>
+                                    </div>
 
-                                        <div class="form-group col-6">
-                                            <label for="first_name">No WhatsApp</label>
-                                            <input id="first_name" type="text" class="form-control" name="hp"
-                                                placeholder="ex. 6281290959xxx" value="{{ $data->no }}" disabled>
-                                        
-                                        </div>
-
-
-
-
-
-
-
-
-
-
-
-                                        <div class="form-group">
-                                            <button type="submit" class="btn btn-primary btn-lg">
-                                                Cetak Data
-                                            </button>
-                                            <!--<a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#pengerjaan">
-                                <i class="fas fa-rocket"></i> Daftar
-                            </a>-->
-                                        </div>
-
-
+                                    <div class="form-group col-6">
+                                        <label for="first_name">No WhatsApp</label>
+                                        <input id="first_name" type="text" class="form-control" name="hp"
+                                            placeholder="ex. 6281290959xxx" value="{{ $data->no }}" disabled>
 
                                     </div>
-                                </form>
+
+
+
+
+
+
+
+
+
+
+
+                                    <div class="form-group">
+                                        <h9 style="color: red;"> * Screenshot / Donwload Pdf untuk bukti! </h9>
+                                        <br>
+                                        <a href="{{ route('print') }}" class="btn btn-primary btn-lg">
+                                            Donwload Pdf
+                                        </a>
+
+                                        <a href="{{ route('logout') }}" class="btn btn-primary btn-lg">
+                                            Log Out
+                                        </a>
+                                    </div>
+
+
+
+                                </div>
+
                             </div>
 
                         </div>
