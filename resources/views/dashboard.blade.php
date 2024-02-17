@@ -10,7 +10,7 @@
     <title>Study Expo | {{ $title }}</title>
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
     <link href="style/styles.css" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+    <link href="https://ppdb.prestasiprima.sch.id/assets/assets/img/favicon.png" rel="icon">
     <script data-search-pseudo-elements="" defer=""
         src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js" crossorigin="anonymous">
@@ -21,7 +21,7 @@
     @include('components.navbar')
 
     <div id="layoutSidenav">
-       
+
         @include('components.sidebar')
 
         <div id="layoutSidenav_content">
@@ -39,18 +39,19 @@
 
     <script src="https://assets.startbootstrap.com/js/sb-customizer.js"></script>
     <script>
-        window.addEventListener('DOMContentLoaded', event => {
-            // Simple-DataTables
-            // https://github.com/fiduswriter/Simple-DataTables/wiki
+    window.addEventListener('DOMContentLoaded', event => {
+        // Simple-DataTables
+        // https://github.com/fiduswriter/Simple-DataTables/wiki
 
-            const datatablesSimple = document.getElementById('datatablesSimple');
-            if (datatablesSimple) {
-                new simpleDatatables.DataTable(datatablesSimple);
-            }
-        });
+        const datatablesSimple = document.getElementById('datatablesSimple');
+        if (datatablesSimple) {
+            new simpleDatatables.DataTable(datatablesSimple);
+        }
+    });
     </script>
     <sb-customizer project="sb-admin-pro"></sb-customizer>
-    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
         integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
         data-cf-beacon='{"rayId":"85671c0028468216","version":"2024.2.0","token":"6e2c2575ac8f44ed824cef7899ba8463"}'
         crossorigin="anonymous"></script>

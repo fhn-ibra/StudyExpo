@@ -5,10 +5,8 @@
         content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <meta content="Daftar Segera di SMK Prestasi Prima dan SMA Prestasi Prima, Sekolah berbasis ICT di Jakarta"
-        name="description">
-    <meta content="Daftar Sekolah Prestasi Prima Tahun 2023 / 2024" name="keywords">
-    <title>Form Registrasi</title>
+
+    <title>Form Registrasi Study Expo</title>
     <link href="https://ppdb.prestasiprima.sch.id/assets/assets/img/favicon.png" rel="icon">
     <!-- General CSS Files -->
     <!-- <link rel="shortcut icon" href="/tema/favicon.png" type="image/x-icon" /> -->
@@ -261,7 +259,8 @@
                                                     </div>
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" name="sesi1"
-                                                            id="br4" value="4" required {{ $a4 == 0 ? 'disabled' : '' }}>
+                                                            id="br4" value="4" required
+                                                            {{ $a4 == 0 ? 'disabled' : '' }}>
                                                         <label class="form-check-label" for="br4">
                                                             Kelas Teknik
                                                             <h9
@@ -400,7 +399,9 @@
 
 
                                         <div class="form-group">
-                                            <button {{ (($a1 > 0 || $a2 > 0 || $a3 > 0 || $a4 > 0 || $a5 > 0 ) && ($b1 > 0 || $b2 > 0 || $b3 > 0 || $b4 > 0 || $b5 > 0)) ? '' : 'disabled' }} type="submit" class="btn btn-primary btn-lg">
+                                            <button
+                                                {{ (($a1 > 0 || $a2 > 0 || $a3 > 0 || $a4 > 0 || $a5 > 0 ) && ($b1 > 0 || $b2 > 0 || $b3 > 0 || $b4 > 0 || $b5 > 0)) ? '' : 'disabled' }}
+                                                type="submit" class="btn btn-primary btn-lg">
                                                 Daftar
                                             </button>
                                             <!--<a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#pengerjaan">

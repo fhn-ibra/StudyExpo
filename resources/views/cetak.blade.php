@@ -5,10 +5,8 @@
         content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <meta content="Daftar Segera di SMK Prestasi Prima dan SMA Prestasi Prima, Sekolah berbasis ICT di Jakarta"
-        name="description">
-    <meta content="Daftar Sekolah Prestasi Prima Tahun 2023 / 2024" name="keywords">
-    <title>Form Registrasi</title>
+
+    <title> Study Expo</title>
     <link href="https://ppdb.prestasiprima.sch.id/assets/assets/img/favicon.png" rel="icon">
     <!-- General CSS Files -->
     <!-- <link rel="shortcut icon" href="/tema/favicon.png" type="image/x-icon" /> -->

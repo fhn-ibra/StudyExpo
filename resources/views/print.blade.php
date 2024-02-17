@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
 
-    <title>Form Registrasi</title>
+    <title>Study Expo Print</title>
     <link href="https://ppdb.prestasiprima.sch.id/assets/assets/img/favicon.png" rel="icon">
     <!-- General CSS Files -->
     <!-- <link rel="shortcut icon" href="/tema/favicon.png" type="image/x-icon" /> -->
