@@ -216,10 +216,9 @@
 
                             <div class="card-body">
 
-                                <form id="form-register" action="/login.html" method="POST" class="needs-validation"
+                                <form id="form-register" action="{{ route('daftar-guest') }}" method="POST" class="needs-validation"
                                     novalidate="">
-                                    <input type="hidden" name="csrf_token_name"
-                                        value="da02f59bf2f8bc4bd863c2011e42363d">
+                                    @csrf
 
                                     <div class="row">
                                         <div class="form-group col-6">
@@ -228,40 +227,40 @@
                                                 <legend class="col-form-label col-sm-2 pt-0">Kelas Minat</legend>
                                                 <div class="col-sm-10">
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="gridRadios1"
-                                                            id="br1" value="option1" required>
+                                                        <input class="form-check-input" type="radio" name="sesi1"
+                                                            id="br1" value="1" required>
                                                         <label class="form-check-label" for="br1">
                                                             Kelas Ekonomi Bisnis
                                                             <h9 style="color: red;"> ( * Tersedia )</h9>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="gridRadios1"
-                                                            id="br2" value="option2" required>
+                                                        <input class="form-check-input" type="radio" name="sesi1"
+                                                            id="br2" value="2" required>
                                                         <label class="form-check-label" for="br2">
                                                             Kelas Sosial Politik
                                                             <h9 style="color: red;"> ( * Tersedia )</h9>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="gridRadios1"
-                                                            id="br3" value="option3" required>
+                                                        <input class="form-check-input" type="radio" name="sesi1"
+                                                            id="br3" value="3" required>
                                                         <label class="form-check-label" for="br3">
                                                             Kelas Hukum
                                                             <h9 style="color: red;"> ( * Tersedia )</h9>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="gridRadios1"
-                                                            id="br4" value="option4" required>
+                                                        <input class="form-check-input" type="radio" name="sesi1"
+                                                            id="br4" value="4" required>
                                                         <label class="form-check-label" for="br4">
                                                             Kelas Teknik
                                                             <h9 style="color: red;"> ( * Tersedia )</h9>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="gridRadios1"
-                                                            id="br5" value="option5" required>
+                                                        <input class="form-check-input" type="radio" name="sesi1"
+                                                            id="br5" value="5" required>
                                                         <label class="form-check-label" for="br5">
                                                             Kelas Kedokteran
                                                             <h9 style="color: red;"> ( * Tersedia )</h9>
@@ -282,40 +281,40 @@
                                                 <legend class="col-form-label col-sm-2 pt-0">Kelas Minat</legend>
                                                 <div class="col-sm-10">
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="gridRadios2"
-                                                            id="br6" value="option1" required>
+                                                        <input class="form-check-input" type="radio" name="sesi2"
+                                                            id="br6" value="1" required>
                                                         <label class="form-check-label" for="br6">
                                                             Kelas Ekonomi Bisnis
                                                             <h9 style="color: red;"> ( * Tersedia )</h9>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="gridRadios2"
-                                                            id="br7" value="option2" required>
+                                                        <input class="form-check-input" type="radio" name="sesi2"
+                                                            id="br7" value="2" required>
                                                         <label class="form-check-label" for="br7">
                                                             Kelas Sosial Politik
                                                             <h9 style="color: red;"> ( * Tersedia )</h9>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="gridRadios2"
-                                                            id="br8" value="option3" required>
+                                                        <input class="form-check-input" type="radio" name="sesi2"
+                                                            id="br8" value="3" required>
                                                         <label class="form-check-label" for="br8">
                                                             Kelas Hukum
                                                             <h9 style="color: red;"> ( * Tersedia )</h9>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="gridRadios2"
-                                                            id="br9" value="option4" required>
+                                                        <input class="form-check-input" type="radio" name="sesi2"
+                                                            id="br9" value="4" required>
                                                         <label class="form-check-label" for="br9">
                                                             Kelas Teknik
                                                             <h9 style="color: red;"> ( * Tersedia )</h9>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="gridRadios2"
-                                                            id="br10" value="option5" required>
+                                                        <input class="form-check-input" type="radio" name="sesi2"
+                                                            id="br10" value="5" required>
                                                         <label class="form-check-label" for="br10">
                                                             Kelas Kedokteran
                                                             <h9 style="color: red;"> ( * Tersedia )</h9>
@@ -330,7 +329,7 @@
 
                                         <div class="form-group col-6">
                                             <label for="first_name">Nama Lengkap</label>
-                                            <input id="nmPendaftar" type="text" class="form-control" name="nmPendaftar"
+                                            <input id="nmPendaftar" type="text" class="form-control" name="nama"
                                                 placeholder="Nama Lengkap" autofocus="" required=""
                                                 onkeyup="myFunction()">
                                             <div class="invalid-feedback">
@@ -339,7 +338,7 @@
                                         </div>
                                         <div class="form-group col-6">
                                             <label for="last_name">Kelas</label>
-                                            <input id="asalSekolah" type="text" class="form-control" name="asalSekolah"
+                                            <input id="asalSekolah" type="text" class="form-control" name="kelas"
                                                 placeholder="Kelas beserta jurusan " required=""
                                                 onkeyup="myFunction1()">
                                             <div class="invalid-feedback">
