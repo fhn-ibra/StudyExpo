@@ -20,7 +20,7 @@ class PendaftarController extends Controller
                 return redirect()->route('cetak');
             } else {
                 $email = explode('@', Auth::user()->email)[1];
-                if (!in_array($email, ['smkprestasiprima.sch.id', 'smaprestasiprima.sch.id'])) {
+                if (!in_array($email, ['smkprestasiprima.sch.id', 'smk.prestasiprima.sch.id','smaprestasiprima.sch.id', 'sma.prestasiprima.sch.id'])) {
                     return redirect()->route('logout')->with(['error' => true]);
                 } else {
                     return view('guest', [
@@ -85,7 +85,7 @@ class PendaftarController extends Controller
         if ($validasi != null) {
 
             $email = explode('@', Auth::user()->email)[1];
-            if (!in_array($email, ['smkprestasiprima.sch.id', 'smaprestasiprima.sch.id'])) {
+            if (!in_array($email, ['smkprestasiprima.sch.id', 'smk.prestasiprima.sch.id','smaprestasiprima.sch.id', 'sma.prestasiprima.sch.id'])) {
                 return redirect()->route('logout')->with(['error' => true]);
             } else {
                 return view('cetak', ['data' => $validasi]);
