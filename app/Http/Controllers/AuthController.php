@@ -22,6 +22,11 @@ class AuthController extends Controller
 
     public function logout(){
         Auth::logout();
+
+        if(session('error')){
+            return redirect('/')->with(['error' => true]);
+        }
+        
         return redirect('/');
     }
 }
