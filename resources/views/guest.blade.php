@@ -237,7 +237,7 @@
                                                     </div>
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" name="sesi1"
-                                                            id="br2" value="1" required
+                                                            id="br2" value="2" required
                                                             {{ $a2 <= 0 ? 'disabled' : '' }}>
                                                         <label class="form-check-label" for="br2">
                                                             Kelas Sosial Politik
@@ -248,7 +248,7 @@
                                                     </div>
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio" name="sesi1"
-                                                            id="br3" value="1" required
+                                                            id="br3" value="3" required
                                                             {{ $a3 <= 0 ? 'disabled' : '' }}>
                                                         <label class="form-check-label" for="br3">
                                                             Kelas Hukum

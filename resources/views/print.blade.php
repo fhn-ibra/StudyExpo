@@ -199,10 +199,10 @@
                 <div class="row">
                     <div
                         class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
-                        <div class="login-brand" style="margin-bottom: 15px">
-                            <img src="https://ppdb.prestasiprima.sch.id/tema/assets/img/logo yayasan wahana prestasi prima.png"
+                         <div class="login-brand" style="margin-bottom: 15px">
+                        {{--    <img src="https://ppdb.prestasiprima.sch.id/tema/assets/img/logo yayasan wahana prestasi prima.png"
                                 alt="logo" width="80" class="shadow-light rounded-circle">
-                        </div>
+                        </div> --}}
 
                         <div class="card card-primary">
                             <div class="card-header ">
@@ -226,7 +226,7 @@
 
 
                                                 <label class="form-check-label" for="br1  ">
-                                                    <b>- Kelas {{ $data->sesiSatu->nama_tiket }}</b>
+                                                    <b>- Kelas {{ $data->sesiSatu->nama_tiket }} -</b>
 
                                                 </label>
 
@@ -237,12 +237,12 @@
 
                                         <div class="form-group col-6">
                                             <fieldset class="row mb-3" id="s2">
-                                                <h9> Sesi 1 (09.00 - 10.00)</h9>
+                                                <h9> Sesi 2 (10.00 - 11.00)</h9>
                                                 <h2 class="col-form-label col-sm-2 pt-0">Kelas Minat</h2>
 
 
                                                 <label class="form-check-label" for="br1  ">
-                                                    <b>- Kelas {{ $data->sesiDua->nama_tiket }}</b>
+                                                    <b>- Kelas {{ $data->sesiDua->nama_tiket }} -</b>
 
                                                 </label>
 

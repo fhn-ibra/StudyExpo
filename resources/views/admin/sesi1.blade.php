@@ -25,14 +25,18 @@
                         <tr>
                             <th>Nama Tiket</th>
                             <th>Stok</th>
-                            {{ Auth::user()->level == 'admin' ? '<th>Aksi</th>' : '' }}
+                            @if (Auth::user()->level == 'admin')
+                            <th>Aksi</th>
+                            @endif
                         </tr>
                     </thead>
                     <tfoot>
                         <tr>
                             <th>Nama Tiket</th>
                             <th>Stok</th>
-                            {{ Auth::user()->level == 'admin' ? '<th>Aksi</th>' : '' }}
+                            @if (Auth::user()->level == 'admin')
+                            <th>Aksi</th>
+                            @endif
                         </tr>
                     </tfoot>
                     <tbody>
