@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
 
-    <title>Form Registrasi Study Expo</title>
+    <title>Form Registrasi Career Day</title>
     <link href="https://ppdb.prestasiprima.sch.id/assets/assets/img/favicon.png" rel="icon">
     <!-- General CSS Files -->
     <!-- <link rel="shortcut icon" href="/tema/favicon.png" type="image/x-icon" /> -->
@@ -208,7 +208,7 @@
                         <div class="card card-primary">
                             <div class="card-header ">
                                 <center>
-                                    <h4 class="text-center" style="color: #013289;">FORMULIR PENDAFTARAN STUDY EXPO</h4>
+                                    <h4 class="text-center" style="color: #013289;">FORMULIR PENDAFTARAN CAREER DAY</h4>
                                 </center>
                             </div>
 
@@ -221,7 +221,7 @@
                                     <div class="row">
                                         <div class="form-group col-6">
                                             <fieldset class="row mb-3" id="s1">
-                                                <h6> Sesi 1 (09.00 - 10.00)</h6>
+                                                <h6> Sesi 1 (09.30 - 10.45)</h6>
                                                 <legend class="col-form-label col-sm-2 pt-0">Kelas Minat</legend>
                                                 <div class="col-sm-10">
                                                     <div class="form-check">
@@ -233,6 +233,7 @@
                                                             <h9
                                                                 style="color: {{ $a1 <= 0 ? 'red' : 'rgb(0, 216, 36)' }};">
                                                                 ({{ $a1 }} Tiket)</h9>
+                                                                <br>Dellanona, B. Acc., M.Sc (Ernst & Young)<br>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
@@ -240,10 +241,11 @@
                                                             id="br2" value="2" required
                                                             {{ $a2 <= 0 ? 'disabled' : '' }}>
                                                         <label class="form-check-label" for="br2">
-                                                            Kelas Sosial Politik
+                                                            Kelas E-Commerce
                                                             <h9
                                                                 style="color: {{ $a2 <= 0 ? 'red' : 'rgb(0, 216, 36)' }};">
                                                                 ({{ $a2 }} Tiket)</h9>
+                                                                <br>Toni Partogi Johannes S (Shoope Indonesia)<br>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
@@ -255,6 +257,7 @@
                                                             <h9
                                                                 style="color: {{ $a3 <= 0 ? 'red' : 'rgb(0, 216, 36)' }};">
                                                                 ({{ $a3 }} Tiket)</h9>
+                                                                <br>Adv.Dr.(c)Baharudin Farawowan,S.H, M.H,CMLC (BF Lawfirm Consultant)<br>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
@@ -266,6 +269,8 @@
                                                             <h9
                                                                 style="color: {{ $a4 <= 0 ? 'red' : 'rgb(0, 216, 36)' }};">
                                                                 ({{ $a4 }} Tiket)</h9>
+                                                                <br>Ar. Parenatha Asih Sidabutar, ST, IAI (PT Prima Sigmatech Utama)<br>
+                                                                
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
@@ -277,6 +282,7 @@
                                                             <h9
                                                                 style="color: {{ $a5 <= 0 ? 'red' : 'rgb(0, 216, 36)' }};">
                                                                 ({{ $a5 }} Tiket)</h9>
+                                                                <br>dr. Gammarida Magfirah (Dokter Umum Puskes Kec. Cipayung & Influencer)<br>
                                                         </label>
                                                     </div>
                                                 </div>
@@ -289,7 +295,7 @@
 
                                         <div class="form-group col-6">
                                             <fieldset class="row mb-3" id="s2">
-                                                <h6> Sesi 2 (10.00 - 11.00)</h6>
+                                                <h6> Sesi 2 (11.00 - 12.15)</h6>
                                                 <legend class="col-form-label col-sm-2 pt-0">Kelas Minat</legend>
                                                 <div class="col-sm-10">
                                                     <div class="form-check">
@@ -301,6 +307,7 @@
                                                             <h9
                                                                 style="color: {{ $b1 <= 0 ? 'red' : 'rgb(0, 216, 36)' }};">
                                                                 ({{ $b1 }} Tiket)</h9>
+                                                                <br>Dellanona, B. Acc., M.Sc (Ernst & Young)<br>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
@@ -308,10 +315,11 @@
                                                             id="br7" value="2" required
                                                             {{ $b2 <= 0 ? 'disabled' : '' }}>
                                                         <label class="form-check-label" for="br7">
-                                                            Kelas Sosial Politik
+                                                            Kelas E-Commerce
                                                             <h9
                                                                 style="color: {{ $b2 <= 0 ? 'red' : 'rgb(0, 216, 36)' }};">
                                                                 ({{ $b2 }} Tiket)</h9>
+                                                                <br>Toni Partogi Johannes S (Shoope Indonesia)<br>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
@@ -323,6 +331,7 @@
                                                             <h9
                                                                 style="color: {{ $b3 <= 0 ? 'red' : 'rgb(0, 216, 36)' }};">
                                                                 ({{ $b3 }} Tiket)</h9>
+                                                                <br>Adv.Dr.(c)Baharudin Farawowan,S.H, M.H,CMLC (BF Lawfirm Consultant)<br>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
@@ -334,6 +343,7 @@
                                                             <h9
                                                                 style="color: {{ $b4 <= 0 ? 'red' : 'rgb(0, 216, 36)' }};">
                                                                 ({{ $b4 }} Tiket)</h9>
+                                                                <br>Ar. Parenatha Asih Sidabutar, ST, IAI (PT Prima Sigmatech Utama)<br>
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
@@ -345,6 +355,7 @@
                                                             <h9
                                                                 style="color: {{ $b5 <= 0 ? 'red' : 'rgb(0, 216, 36)' }};">
                                                                 ({{ $b5 }} Tiket)</h9>
+                                                                <br>dr. Gammarida Magfirah (Dokter Umum Puskes Kec. Cipayung & Influencer)<br>
                                                         </label>
                                                     </div>
                                                 </div>
@@ -368,15 +379,15 @@
                                             <select id="kelas" class="form-control" name="kelas" required=""
                                                 onchange="myFunction1()">
                                                 <option value="" selected disabled>Pilih kelas beserta jurusan</option>
-                                                <option value="XII-IPA 1">XII-IPA 1</option>
-                                                <option value="XII-IPA 2">XII-IPA 2</option>
-                                                <option value="XII-IPA 3">XII-IPA 3</option>
-                                                <option value="XII-IPA 4">XII-IPA 4</option>
-                                                <option value="XII-IPS 1">XII-IPS 1</option>
-                                                <option value="XII-IPS 2">XII-IPS 2</option>
-                                                <option value="XII-IPS 3">XII-IPS 3</option>
-                                                <option value="XII-IPS 4">XII-IPS 4</option>
-                                                <option value="XII-IPS 5">XII-IPS 5</option>
+                                                <option value="XII-IPA-1">XII-IPA-1</option>
+                                                <option value="XII-IPA-2">XII-IPA-2</option>
+                                                <option value="XII-IPA-3">XII-IPA-3</option>
+                                                <option value="XII-IPA-4">XII-IPA-4</option>
+                                                <option value="XII-IPS-1">XII-IPS-1</option>
+                                                <option value="XII-IPS-2">XII-IPS-2</option>
+                                                <option value="XII-IPS-3">XII-IPS-3</option>
+                                                <option value="XII-IPS-4">XII-IPS-4</option>
+                                                <option value="XII-IPS-5">XII-IPS-5</option>
 
                                             </select>
                                             <div class="invalid-feedback">

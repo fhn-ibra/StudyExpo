@@ -220,15 +220,29 @@
                                 <div class="row">
                                     <div class="form-group col-6">
                                         <fieldset class="row mb-3" id="s1">
-                                            <h6> Sesi 1 (09.00 - 10.00)</h6>
+                                            <h6> Sesi 1 (09.30 - 10.45)</h6>
                                             <legend class="col-form-label col-sm-2 pt-0">Kelas Minat</legend>
                                             <div class="col-sm-10">
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="radio" name="gridRadios1"
                                                         id="br1" value="option1" checked>
                                                     <label class="form-check-label" for="br1">
-                                                        Kelas {{ $data->sesiSatu->nama_tiket }}
-
+                                                        Kelas {{ $data->sesiSatu->nama_tiket }} 
+                                                        @if ($data->sesi1 == 1)
+                                                            <br><b>AULA MORA</b>
+                                                        @endif
+                                                        @if ($data->sesi1 == 2)
+                                                            <br><b>RUANG 1 GEDUNG C</b>
+                                                        @endif
+                                                        @if ($data->sesi1 == 3)
+                                                            <br><b>RUANG 2 GEDUNG C</b>
+                                                        @endif
+                                                        @if ($data->sesi1 == 4)
+                                                            <br><b>RUANG 3 GEDUNG C</b>
+                                                        @endif
+                                                        @if ($data->sesi1 == 5)
+                                                            <br><b>RUANG 4 GEDUNG C</b>
+                                                        @endif
                                                     </label>
                                                 </div>
 
@@ -240,7 +254,7 @@
 
                                     <div class="form-group col-6">
                                         <fieldset class="row mb-3" id="s2">
-                                            <h6> Sesi 2 (10.00 - 11.00)</h6>
+                                            <h6> Sesi 2 (11.00 - 12.15)</h6>
                                             <legend class="col-form-label col-sm-2 pt-0">Kelas Minat</legend>
                                             <div class="col-sm-10">
                                                 <div class="form-check">
@@ -248,6 +262,21 @@
                                                         id="br6" value="option1" checked>
                                                     <label class="form-check-label" for="br6">
                                                         Kelas {{ $data->sesiDua->nama_tiket }}
+                                                        @if ($data->sesi2 == 1)
+                                                            <br><b>RUANG 1 GEDUNG C</b>
+                                                        @endif
+                                                        @if ($data->sesi2 == 2)
+                                                            <br><b>AULA MORA</b>
+                                                        @endif
+                                                        @if ($data->sesi2 == 3)
+                                                            <br><b>RUANG 3 GEDUNG C</b>
+                                                        @endif
+                                                        @if ($data->sesi2 == 4)
+                                                            <br><b>RUANG 2 GEDUNG C</b>
+                                                        @endif
+                                                        @if ($data->sesi2 == 5)
+                                                            <br><b>RUANG 4 GEDUNG C</b>
+                                                        @endif
                                                     </label>
                                                 </div>
                                             </div>
