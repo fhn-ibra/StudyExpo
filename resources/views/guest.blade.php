@@ -282,15 +282,17 @@
                                             <select id="kelas" class="form-control" name="kelas" required=""
                                                 onchange="myFunction1()">
                                                 <option value="" selected disabled>Pilih kelas beserta jurusan</option>
-                                                <option value="XII-IPA-1">XII-IPA-1</option>
-                                                <option value="XII-IPA-2">XII-IPA-2</option>
-                                                <option value="XII-IPA-3">XII-IPA-3</option>
-                                                <option value="XII-IPA-4">XII-IPA-4</option>
-                                                <option value="XII-IPS-1">XII-IPS-1</option>
-                                                <option value="XII-IPS-2">XII-IPS-2</option>
-                                                <option value="XII-IPS-3">XII-IPS-3</option>
-                                                <option value="XII-IPS-4">XII-IPS-4</option>
-                                                <option value="XII-IPS-5">XII-IPS-5</option>
+                                                <option value="XII-1">XII-1</option>
+                                                <option value="XII-2">XII-2</option>
+                                                <option value="XII-3">XII-3</option>
+                                                <option value="XII-4">XII-4</option>
+                                                <option value="XII-5">XII-5</option>
+                                                <option value="XII-6">XII-6</option>
+                                                <option value="XII-7">XII-7</option>
+                                                <option value="XII-8">XII-8</option>
+                                                <option value="XII-9">XII-9</option>
+                                                <option value="XII-10">XII-10</option>
+                                                <option value="XII-11">XII-11</option>
 
                                             </select>
                                             <div class="invalid-feedback">
