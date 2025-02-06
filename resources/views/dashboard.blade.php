@@ -33,10 +33,10 @@
 
     <script src="js/jquery.js"></script>
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+    <script src="template/bundle.min.js" crossorigin="anonymous">
     </script>
     <script src="js/scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
+    <script src="template/datatable.min.js"
         crossorigin="anonymous"></script>
     <script src="js/datatables/datatables-simple-demo.js"></script>
 
