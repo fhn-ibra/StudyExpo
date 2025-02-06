@@ -18,7 +18,10 @@
     <!-- Main page content-->
     <div class="container-xl px-4 mt-n10">
         <div class="card mb-4">
-            <div class="card-header">Kelas Sesi 2</div>
+            <div class="card-header">
+                 <a href="#" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tambahModal"><i
+                data-feather="plus-circle" style="margin-right: 8px"></i>Tambah Data</a>
+            </div>
             <div class="card-body">
                 <table id="datatablesSimple">
                     <thead>
