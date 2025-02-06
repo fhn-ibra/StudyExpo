@@ -14,6 +14,7 @@ class Sesi1 extends Model
     protected $fillable = [
         'nama_tiket',
         'stok',
+        'lokasi'
     ];
 
     public function pendaftar()
