@@ -11,15 +11,15 @@
     <!-- General CSS Files -->
     <!-- <link rel="shortcut icon" href="/tema/favicon.png" type="image/x-icon" /> -->
     <link rel="stylesheet" href="style/bootstrap.min.css">
-    <link rel="stylesheet" href="https://ppdb.prestasiprima.sch.id/tema/assets/modules/fontawesome/css/all.css">
+    <link rel="stylesheet" href="template/fontawesome.all.css">
 
     <!-- CSS Libraries -->
     <link rel="stylesheet"
         href="https://ppdb.prestasiprima.sch.id/tema/assets/modules/bootstrap-social/bootstrap-social.css">
-    <link rel="stylesheet" href="https://ppdb.prestasiprima.sch.id/tema/pages/iziToast.min.css">
+        <link rel="stylesheet" href="template/izitoast.min.css">
     <!-- Template CSS -->
-    <link rel="stylesheet" href="https://ppdb.prestasiprima.sch.id/tema/assets/css/style.css">
-    <link rel="stylesheet" href="https://ppdb.prestasiprima.sch.id/tema/assets/css/components.css">
+    <link rel="stylesheet" href="template/style.css">
+    <link rel="stylesheet" href="template/components.css">
     <!-- Start GA -->
 
     <!-- /END GA -->
@@ -439,25 +439,24 @@
         src="https://www.gstatic.com/recaptcha/releases/yiNW3R9jkyLVP5-EEZLDzUtA/recaptcha__id.js"
         crossorigin="anonymous" integrity="sha384-ZdGdiYJtYbWWluAz6A2ENxUz6pJ0i0vUSbAK4CioMEVzq77NAwq76gMIz4eJYUjJ">
     </script>
-    <script src="https://ppdb.prestasiprima.sch.id/assets/assets/js/jquery.min.js"></script>
+    <script src="tempalte/jquery.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="https://ppdb.prestasiprima.sch.id/tema/assets/js/stisla.js"></script>
-    <script src="https://ppdb.prestasiprima.sch.id/tema/assets/modules/moment.min.js"></script>
+<script src="template/ajax.moment.min.js"></script>
+    <script src="template/stisla.js"></script>
+    <script src="template/moment.min.js"></script>
 
 
     <!-- JS Libraies -->
 
     <!-- Page Specific JS File -->
-    <script src="https://ppdb.prestasiprima.sch.id/tema/pages/iziToast.min.js"></script>
+    <script src="template/izitoast.min.js"></script>
     <!-- Template JS File -->
-    <script src="https://ppdb.prestasiprima.sch.id/tema/assets/js/scripts.js"></script>
-    <script src="https://ppdb.prestasiprima.sch.id/tema/assets/js/custom.js"></script>
-
+    <script src="template/scripts.js"></script>
+    <script src="template/custom.js"></script>
 
     <script>
     function myFunction() {

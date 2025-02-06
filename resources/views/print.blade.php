@@ -11,20 +11,19 @@
     <!-- General CSS Files -->
     <!-- <link rel="shortcut icon" href="/tema/favicon.png" type="image/x-icon" /> -->
     <link rel="stylesheet" href="style/bootstrap.min.css">
-    <link rel="stylesheet" href="public\assets\assets\modules\fontawesome\css\all.css">
+    <link rel="stylesheet" href="template/fontawesome.all.css">
 
     <!-- CSS Libraries -->
     <link rel="stylesheet"
         href="https://ppdb.prestasiprima.sch.id/tema/assets/modules/bootstrap-social/bootstrap-social.css">
-    <link rel="stylesheet" href="https://ppdb.prestasiprima.sch.id/tema/pages/iziToast.min.css">
+        <link rel="stylesheet" href="template/izitoast.min.css">
     <!-- Template CSS -->
-    <link rel="stylesheet" href="https://ppdb.prestasiprima.sch.id/tema/assets/css/style.css">
-    <link rel="stylesheet" href="https://ppdb.prestasiprima.sch.id/tema/assets/css/components.css">
-    <!-- Start GA -->
+    <link rel="stylesheet" href="template/style.css">
+    <link rel="stylesheet" href="template/components.css">
 
     <!-- /END GA -->
     <link rel="stylesheet" href="chrome-extension://mhnlakgilnojmhinhkckjpncpbhabphi/content.css">
-    <link rel="stylesheet" href="public\stylees.css">
+    <link rel="stylesheet" href="public/stylees.css">
     <style id="_goober">
     .go1475592160 {
         height: 0;
@@ -327,18 +326,15 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="https://ppdb.prestasiprima.sch.id/tema/assets/js/stisla.js"></script>
-    <script src="https://ppdb.prestasiprima.sch.id/tema/assets/modules/moment.min.js"></script>
+<script src="template/ajax.moment.min.js"></script>
+<script src="template/stisla.js"></script>
+    <script src="template/moment.min.js"></script>
 
 
-    <!-- JS Libraies -->
-
-    <!-- Page Specific JS File -->
-    <script src="https://ppdb.prestasiprima.sch.id/tema/pages/iziToast.min.js"></script>
+    <script src="template/izitoast.min.js"></script>
     <!-- Template JS File -->
-    <script src="https://ppdb.prestasiprima.sch.id/tema/assets/js/scripts.js"></script>
-    <script src="https://ppdb.prestasiprima.sch.id/tema/assets/js/custom.js"></script>
+    <script src="template/scripts.js"></script>
+    <script src="template/custom.js"></script>
 
 
     <script>
