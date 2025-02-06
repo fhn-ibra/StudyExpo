@@ -17,7 +17,7 @@ use App\Http\Controllers\PendaftarController;
 |
 */
 
-Route::group(['middleware' => ['guest']], function() {
+Route::group(['middleware' => ['guest']], function () {
     Route::get('/', function () {
         return view('auth.guestlogin');
     })->name('login');
@@ -35,21 +35,23 @@ Route::group(['middleware' => ['guest']], function() {
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/daftar', [PendaftarController::class, 'index'])->name('guest');
     Route::post('/daftar-save', [PendaftarController::class, 'save'])->name('daftar-guest');
-    
+
     Route::get('/print', [PendaftarController::class, 'print'])->name('print');
     Route::get('/cetak', [PendaftarController::class, 'cetak'])->name('cetak');
 
     Route::get('/pendaftar', [AdminController::class, 'pendaftar'])->name('pendaftar');
     Route::post('/delete-pendaftar/{id}', [AdminController::class, 'delete_pendaftar']);
-    
-Route::get('/sesi1', [AdminController::class, 'sesi1'])->name('sesi1');
-Route::post('/edit-sesi1/{id}', [AdminController::class, 'edit1']);
+
+    Route::get('/sesi1', [AdminController::class, 'sesi1'])->name('sesi1');
+    Route::post('/edit-sesi1/{id}', [AdminController::class, 'edit1']);
 
 
-Route::get('/sesi2', [AdminController::class, 'sesi2'])->name('sesi2');
-Route::post('/edit-sesi2/{id}', [AdminController::class, 'edit2']);
+    Route::get('/sesi2', [AdminController::class, 'sesi2'])->name('sesi2');
+    Route::post('/edit-sesi2/{id}', [AdminController::class, 'edit2']);
 
-Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+    Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+
+    Route::post('/sesi1', [AdminController::class, 'sesi1_insert'])->name('sesi1-insert');
 });
 
 

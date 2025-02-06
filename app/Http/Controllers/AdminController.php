@@ -34,6 +34,16 @@ class AdminController extends Controller
         }
     }
 
+    public function sesi1_insert(Request $request){
+        $sesi1 = new Sesi1();
+        $sesi1->nama_tiket = $request->nama;
+        $sesi1->stok = $request->tiket;
+        $sesi1->lokasi = $request->lokasi;
+        $sesi1->save();
+
+        return redirect()->route('sesi1')->with('success', 'Lorem Ipsum');
+    }
+
     public function sesi2()
     {
         if (Auth::user()->google_id != null) {
@@ -55,7 +65,7 @@ class AdminController extends Controller
         $data = Sesi1::find($id);
         $data->stok = $request->stok;
         $data->save();
-        return redirect()->route('sesi1')->with(['modal' => true]);
+        return redirect()->route('sesi1')->with('success', 'Stok telah di Update!');
     }
 
     public function edit2(Request $request, $id){

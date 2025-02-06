@@ -19,15 +19,17 @@
     <div class="container-xl px-4 mt-n10">
         <div class="card mb-4">
             <div class="card-header">
+                @if(Auth::user()->level == 'admin')
                 <a href="#" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tambahModal"><i
                     data-feather="plus-circle" style="margin-right: 8px"></i>Tambah Data</a>
+                @endif
             </div>
             <div class="card-body">
                 <table id="datatablesSimple">
                     <thead>
                         <tr>
                             <th>Nama Tiket</th>
-                            <th>Stok</th>
+                            <th>Tiket Tersedia</th>
                             @if (Auth::user()->level == 'admin')
                             <th>Aksi</th>
                             @endif
@@ -36,7 +38,8 @@
                     <tfoot>
                         <tr>
                             <th>Nama Tiket</th>
-                            <th>Stok</th>
+                            <th>Tiket Tersedia</th>
+                            
                             @if (Auth::user()->level == 'admin')
                             <th>Aksi</th>
                             @endif
@@ -90,14 +93,50 @@
         </div>
     </div>
 </main>
+
+
+@if(Auth::user()->level == 'admin')
+<div class="modal fade" id="tambahModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Tambah Data Kelas</h5>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="{{ route('sesi1-insert') }}" method="post">
+                @csrf
+                <div class="form-group mb-2">
+                    <label for="exampleInputPassword1">Nama Kelas</label>
+                    <input type="text" class="form-control form-control-sm mt-2" name="nama" required placeholder="Kedokteran">
+                </div>
+                <div class="form-group mb-2">
+                    <label for="exampleInputPassword1">Tiket Tersedia</label>
+                    <input type="number" min="0" class="form-control form-control-sm mt-2" required name="tiket" placeholder="0">
+                </div>
+                <div class="form-group mb-2">
+                    <label for="exampleInputPassword1">Lokasi</label>
+                    <input type="text" class="form-control form-control-sm mt-2" name="lokasi" placeholder="AULA MORA">
+                </div>
+        </div>
+        <div class="modal-footer"><button class="btn btn-secondary btn-sm" type="button"
+                data-bs-dismiss="modal">Close</button>
+            <button class="btn btn-primary btn-sm" type="submit">Save changes</button>
+        </div>
+        </form>
+    </div>
+</div>
+</div>
+@endif
 @endsection
 
-@if (session('modal'))
+@if (session('success'))
     @push('js')
         <script>
             Swal.fire({
                 title: "Berhasil",
-                text: "Stok telah di Update!",
+                text: "{{ session('success') }}",
                 icon: "success"
             });
         </script>
